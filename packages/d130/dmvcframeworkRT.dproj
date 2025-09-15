@@ -2,7 +2,7 @@
     <PropertyGroup>
         <ProjectGuid>{96D17257-AF74-48CB-9893-7BCCB56A069D}</ProjectGuid>
         <MainSource>dmvcframeworkRT.dpk</MainSource>
-        <ProjectVersion>20.2</ProjectVersion>
+        <ProjectVersion>20.3</ProjectVersion>
         <FrameworkType>None</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
@@ -64,7 +64,7 @@
         <VerInfo_MinorVer>4</VerInfo_MinorVer>
         <DCC_Description>DMVCFramework - CopyRight (2010-2025) Daniele Teti and the DMVCFramework Team</DCC_Description>
         <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
-        <DllSuffix>120</DllSuffix>
+        <DllSuffix>130</DllSuffix>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <BT_BuildType>Debug</BT_BuildType>
@@ -108,85 +108,85 @@
         <DCCReference Include="FireDACSqliteDriver.dcp"/>
         <DCCReference Include="loggerproRT.dcp"/>
         <DCCReference Include="SwagDoc.dcp"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.AsyncTask.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.Swagger.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.Trace.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.ETag.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.ActiveRecord.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.ActiveRecordController.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Cache.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Commons.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Console.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.DataSet.Utils.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.DuckTyping.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.FireDAC.Utils.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.HMAC.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.JSONRPC.Client.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.JSONRPC.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.JWT.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Logger.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.Analytics.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.Authentication.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.Authentication.RoleBasedAuthHandler.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.Compression.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.CORS.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.JWT.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.SecurityHeaders.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.MultiMap.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Patches.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RESTAdapter.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Router.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RQL.AST2FirebirdSQL.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RQL.AST2InterbaseSQL.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RQL.AST2MySQL.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RQL.AST2PostgreSQL.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RQL.AST2SQLite.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RQL.Parser.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Rtti.Utils.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Serializer.Abstract.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Serializer.Commons.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Serializer.Defaults.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Serializer.Intf.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Serializer.JsonDataObjects.CustomTypes.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Serializer.JsonDataObjects.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Session.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.SysControllers.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.SystemJSONUtils.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.View.Cache.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Controllers.Register.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.SQLGenerators.Firebird.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.SQLGenerators.Interbase.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.SQLGenerators.MySQL.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.SQLGenerators.PostgreSQL.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.SQLGenerators.Sqlite.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Swagger.Commons.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Nullables.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Serializer.HTML.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.LRUCache.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RESTClient.Commons.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RESTClient.Indy.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RESTClient.Intf.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RESTClient.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Utils.pas"/>
-        <DCCReference Include="..\..\..\sources\JsonDataObjects.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.DotEnv.Parser.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.DotEnv.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Serializer.URLEncoded.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Signal.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Serializer.Text.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Container.pas"/>
-        <DCCReference Include="..\..\..\sources\sqids.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.View.Renderers.TemplatePro.pas"/>
-        <DCCReference Include="..\..\..\sources\TemplatePro.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Session.Database.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.SQLGenerators.MSSQL.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.RQL.AST2MSSQL.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.Middleware.Session.Internal.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.HTMX.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.IntfObjectPool.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.ObjectPool.pas"/>
-        <DCCReference Include="..\..\..\sources\MVCFramework.BloomFilter.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.AsyncTask.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.Swagger.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.Trace.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.ETag.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.ActiveRecord.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.ActiveRecordController.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Cache.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Commons.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Console.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.DataSet.Utils.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.DuckTyping.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.FireDAC.Utils.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.HMAC.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.JSONRPC.Client.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.JSONRPC.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.JWT.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Logger.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.Analytics.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.Authentication.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.Authentication.RoleBasedAuthHandler.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.Compression.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.CORS.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.JWT.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.SecurityHeaders.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.MultiMap.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Patches.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RESTAdapter.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Router.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RQL.AST2FirebirdSQL.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RQL.AST2InterbaseSQL.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RQL.AST2MySQL.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RQL.AST2PostgreSQL.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RQL.AST2SQLite.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RQL.Parser.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Rtti.Utils.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Serializer.Abstract.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Serializer.Commons.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Serializer.Defaults.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Serializer.Intf.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Serializer.JsonDataObjects.CustomTypes.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Serializer.JsonDataObjects.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Session.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.SysControllers.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.SystemJSONUtils.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.View.Cache.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Controllers.Register.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.SQLGenerators.Firebird.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.SQLGenerators.Interbase.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.SQLGenerators.MySQL.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.SQLGenerators.PostgreSQL.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.SQLGenerators.Sqlite.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Swagger.Commons.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Nullables.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Serializer.HTML.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.LRUCache.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RESTClient.Commons.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RESTClient.Indy.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RESTClient.Intf.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RESTClient.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Utils.pas"/>
+        <DCCReference Include="..\..\sources\JsonDataObjects.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.DotEnv.Parser.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.DotEnv.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Serializer.URLEncoded.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Signal.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Serializer.Text.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Container.pas"/>
+        <DCCReference Include="..\..\sources\sqids.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.View.Renderers.TemplatePro.pas"/>
+        <DCCReference Include="..\..\sources\TemplatePro.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Session.Database.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.SQLGenerators.MSSQL.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.RQL.AST2MSSQL.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.Middleware.Session.Internal.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.HTMX.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.IntfObjectPool.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.ObjectPool.pas"/>
+        <DCCReference Include="..\..\sources\MVCFramework.BloomFilter.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

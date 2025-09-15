@@ -15,14 +15,14 @@
 {                          Custom Parameters                             }
 {                                                                        }
 { /RADStudioVersions=                                                    }
-{   Values allowed: 10.0 to 24.0 separed by comma or all keyword         }
+{   Values allowed: 10.0 to 37.0 separed by comma or all keyword         }
 {   Default: (latest version found in computer)                          }
 {   Description: The version used is the product version in resgistry,   }
-{     i.e, the RAD Studio 11 Alexandria is "22.0", the RAD Studio 12     }
-{     Athens is "23.0", etc. This is used to set the RAD Studio          }
+{     i.e, the RAD Studio 12 Athens is "23.0", the RAD Studio 13         }
+{     Florence is "37.0", etc. This is used to set the RAD Studio        }
 {     versions, in silent mode, that will installed the library.         }
-{     Ex: /RADStudioVersions=23.0,22.0 will install only in              }
-{     RAD Studio 12 Athens and 11 Alexandria. But if the parameter is    }
+{     Ex: /RADStudioVersions=37.0,23.0 will install only in              }
+{     RAD Studio 13 Florence and 12 Athens. But if the parameter is      }
 {     /RADStudioVersions=all will install in all RAD Studio installed in }
 {     the machine. Without set this parameter, the value will be only    }
 {     the newest RAD Studio version found on the machine. A cool tip of  }
@@ -40,22 +40,22 @@
 {************************************************************************}
 {                                                                        }
 { Example of command line to install in silent mode:                     }
-{   cmd /C ""SVGIconImageList_Setup.exe"                                 }
-{     /DIR="C:\Dev\SVGIconImageList" /SILENT                             }
+{   cmd /C ""DMVCFramework_Setup.exe"                                    }
+{     /DIR="C:\Dev\DelphiMVCFramework" /SILENT                           }
 {     /RADStudioVersions=all"                                            }
 {                                                                        }
 { In GetIt implementation, the installation command could be:            }
-{   cmd /C ""$(BDSCatalogRepository)\SVGIconImageList\                   }
+{   cmd /C ""$(BDSCatalogRepository)\DelphiMVCFramework\                 }
 {     SVGIconImageList_Setup.exe"                                        }
-{     /DIR="$(BDSCatalogRepository)\SVGIconImageList" /VERYSILENT        }
+{     /DIR="$(BDSCatalogRepository)\DelphiMVCFramework" /VERYSILENT      }
 {     /RADStudioVersions=$(ProductVersion) /CreateUninstallRegKey=no"    }
 {                                                                        }
 { Example of command line to uninstall in silent mode:                   }
-{   cmd /C ""C:\$(UserDocs)SVGIconImageList\unins000.exe" /VERYSILENT    }
+{   cmd /C ""C:\$(UserDocs)DelphiMVCFramework\unins000.exe" /VERYSILENT  }
 {     /RADStudioVersions=all"                                            }
 {                                                                        }
 { In GetIt implementation, the uninstall command could be:               }
-{   cmd /C ""$(BDSCatalogRepository)\SVGIconImageList\unins000.exe"      }
+{   cmd /C ""$(BDSCatalogRepository)\DelphiMVCFramework\unins000.exe"    }
 {     /VERYSILENT /RADStudioVersions=$(ProductVersion)"                  }
 {                                                                        }
 {************************************************************************}
